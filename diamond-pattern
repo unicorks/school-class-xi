@@ -1,0 +1,29 @@
+n = 8
+for i in range(1, (2*n)):
+    e = [" " for j in range((2*n)-1)]
+    if i <= 8:
+        gap = n-i
+    else:
+        x = (2*n)-i
+        gap = n - x
+    e[gap] = "*"
+    e[-(gap+1)] = "*"
+        
+    print("".join(e))
+
+  """ Output:
+         *       
+      * *      
+     *   *     
+    *     *    
+   *       *   
+  *         *  
+ *           * 
+*             *
+ *           * 
+  *         *  
+   *       *   
+    *     *    
+     *   *     
+      * *      
+       *       """
