@@ -16,5 +16,7 @@ def binary_search(lst, item):
     else:
         print(f"Found at {mid+1}th position.")
     return found
-binary_search([1,2,3,5,8], 6)
-binary_search([1,2,3,5,8], 8)
+
+lst = [1,2,3,5,8]
+e = int(input(f"What do you wanna binary search from this list?{lst}"))
+binary_search(lst, e)

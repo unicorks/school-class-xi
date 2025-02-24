@@ -1,5 +1,5 @@
 friends = ['akshra', 'inshirah', 'siya', 'sonakshi', 'suhani']
-friend = 'sonakshi'
+friend = input("Which friend are you searching for?")
 for i in range(len(friends)):
     if friends[i]==friend:
         print(friend, 'found at', i+1)
